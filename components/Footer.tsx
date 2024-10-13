@@ -18,7 +18,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-300"
           >
-            <GitHub fontSize="small" />
+            <GitHub   className="text-white hover:text-cyan-300" fontSize="small" />
           </IconButton>
           <IconButton
             aria-label="Twitter"
@@ -28,7 +28,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-300"
           >
-            <Twitter fontSize="small" />
+            <Twitter   className="text-white hover:text-cyan-300" fontSize="small" />
           </IconButton>
           <IconButton
             aria-label="Facebook"
@@ -38,7 +38,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-300"
           >
-            <Facebook fontSize="small" />
+            <Facebook  className="text-white hover:text-cyan-300"fontSize="small" />
           </IconButton>
           <IconButton
             aria-label="LinkedIn"
@@ -48,7 +48,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-300"
           >
-            <LinkedIn fontSize="small" />
+            <LinkedIn    className="text-white hover:text-cyan-300"fontSize="small" />
           </IconButton>
         </div>
       </div>
