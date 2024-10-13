@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import { Button, Chip, Typography } from "@mui/material";
 import { FaNodeJs, FaShopify, FaReact } from "react-icons/fa";
@@ -24,18 +23,18 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[70%,30%] gap-8 items-center">
           <div>
-          <Typography
-  variant="h1"
-  className="text-5xl sm:text-6xl md:text-7xl lg:text-6xl font-bold mb-4"
->
-  I'm{" "}
-  <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-cyan-600 font-bold">
-    Felix Tellmann
-  </span>
-  , a
-  <br />
-  Fullstack developer.
-</Typography>
+            <Typography
+              variant="h1"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold mb-4" // Adjusted font sizes here
+            >
+              I'm{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-cyan-600 font-bold">
+                Felix Tellmann
+              </span>
+              , a
+              <br />
+              Fullstack developer.
+            </Typography>
 
             {/* Skills Logos with names */}
             <div className="flex flex-wrap gap-4 mb-6">
@@ -61,7 +60,7 @@ export default function HeroSection() {
               variant="body1"
               className="mb-4 text-gray-400 text-lg"
             >
-              I love writing code that takes things next level creating highly
+              I love writing code that takes things to the next level, creating highly
               performant websites, automated API integrations, building my own
               dev-tools, and creating stunning user experiences that make you
               feel WOW!.
@@ -159,27 +158,26 @@ export const Welcome: FC<WelcomeProps> = ({ uses }) => {
 
       {/* Profile Card */}
       <div className="hidden lg:flex justify-center items-center min-h-[40vh] mt-[-26vh]">
-      <div
-  className="relative w-96 h-44 bg-gray-800 rounded-lg overflow-hidden transform transition-all duration-500 ease-in-out"
-  style={{
-    transform: `translateY(${Math.sin(position * 0.1) * 10}px)`,
-    boxShadow:
-      "0 0 20px rgba(0, 255, 249, 0.5), 0 0 30px rgba(0, 255, 249, 0.3), 0 0 40px rgba(0, 255, 249, 0.1)",
-  }}
->
+        <div
+          className="relative w-96 h-44 bg-gray-800 rounded-lg overflow-hidden transform transition-all duration-500 ease-in-out"
+          style={{
+            transform: `translateY(${Math.sin(position * 0.1) * 10}px)`,
+            boxShadow:
+              "0 0 20px rgba(0, 255, 249, 0.5), 0 0 30px rgba(0, 255, 249, 0.3), 0 0 40px rgba(0, 255, 249, 0.1)",
+          }}
+        >
           <div className="absolute inset-0 bg-gradient-to-r from-[#004493] to-[#001731] opacity-50 blur-xl"></div>
           <div className="relative p-4">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center mb-2">
                 <div className="relative w-10 h-10 overflow-hidden rounded-full border-2 border-[#00fff9]">
-        <Image
-  src="/ph2.jpg"
-  alt="Profile picture"
-  fill
-  style={{ objectFit: "cover" }} // Or you can use Tailwind CSS
-  className="absolute inset-0 w-full h-full"
-/>
-
+                  <Image
+                    src="/ph2.jpg"
+                    alt="Profile picture"
+                    fill
+                    style={{ objectFit: "cover" }} // Or you can use Tailwind CSS
+                    className="absolute inset-0 w-full h-full"
+                  />
                 </div>
                 <div className="ml-3">
                   <h2 className="text-lg font-semibold text-white">
@@ -188,12 +186,12 @@ export const Welcome: FC<WelcomeProps> = ({ uses }) => {
                   <p className="text-xs text-gray-400">@FelixTellmann</p>
                 </div>
               </div>
-              <button className="bg-[#09AACD] text-white px-1 py-2 rounded-full w-[20%] text-xs font-semibold hover:bg-cyan-400 hover:text-black  transition-colors duration-300">
+              <button className="bg-[#09AACD] text-white px-1 py-2 rounded-full w-[20%] text-xs font-semibold hover:bg-cyan-400 hover:text-black transition-colors duration-300">
                 Follow
               </button>
             </div>
             <p className="text-gray-300 mb-2 text-sm">
-              Hey, I'm new to twitter and not really a social media person 😅 I'm
+              Hey, I'm new to Twitter and not really a social media person 😅 I'm
               looking to connect with fellow developers and to learn about the
               latest...
             </p>
