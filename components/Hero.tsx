@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Button, Chip, Typography } from "@mui/material";
+import { Button, Chip } from "@mui/material";
 import { FaNodeJs, FaShopify, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { CodeBlock, monoBlue } from "react-code-blocks";
@@ -33,8 +33,9 @@ export default function HeroSection() {
               <br />
               Fullstack developer.
             </h1>
+
             {/* Skills Logos with names */}
-            <div className="flex flex-wrap mt-5  gap-4 mb-6">
+            <div className="flex flex-wrap gap-4 mb-6">
               <div className="flex items-center space-x-2">
                 <SiNextdotjs size={24} />
                 <span>Next.js</span>
@@ -53,23 +54,17 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <Typography
-              variant="body1"
-              className="mb-4 text-gray-400 text-lg"
-            >
+            <h2 className="mb-4 text-gray-400 text-lg">
               I love writing code that takes things to the next level, creating highly
               performant websites, automated API integrations, building my own
               dev-tools, and creating stunning user experiences that make you
               feel WOW!.
-            </Typography>
-            <Typography
-              variant="body1"
-              className="mb-6 text-gray-400 text-lg"
-            >
+            </h2>
+            <h2 className="mb-6 text-gray-400 text-lg">
               I am always keen to learn and explore new technologies,
               frameworks, and programming languages. Currently, I'm learning
               about Astro and Replicache.
-            </Typography>
+            </h2>
             <div className="flex space-x-4 mb-4">
               <button
                 className="px-6 py-3 bg-gray-800 border-[#00fff9] text-white font-medium rounded-md relative overflow-hidden group transition-all duration-300 ease-in-out"
@@ -108,8 +103,8 @@ export default function HeroSection() {
           <div className="space-y-4">
             <div className="flex flex-wrap gap-2 mb-4">
               <Chip label="Hiker" className="bg-[#0E8AAA]  text-[#ffffff]" size="medium" />
-              <Chip label="Chef" className="bg-[#0E793C]  text-[#ffffff]" size="medium" />
-              <Chip label="Runner" className="bg-[#481878]  text-[#ffffff]" size="medium" />
+              <Chip label="Chef" className="bg-[#0E793C]  text-[#ffffff]"  size="medium" />
+              <Chip label="Runner"  className="bg-[#481878]  text-[#ffffff]" size="medium" />
               <Chip label="Mixologist" className="bg-[#004493]  text-[#ffffff]" size="medium" />
             </div>
 
@@ -183,7 +178,7 @@ export const Welcome: FC<WelcomeProps> = ({ uses }) => {
                   <p className="text-xs text-gray-400">@FelixTellmann</p>
                 </div>
               </div>
-              <button className="bg-[#09AACD] text-white px-1 py-2 rounded-full w-[20%] text-xs font-semibold hover:bg-cyan-400 hover:text-black transition-colors duration-300">
+              <button className="bg-[#09AACD] text-white px-1 py-2 rounded-full w-[20%] text-xs font-semibold hover:bg-cyan-400 hover:text-black  transition-colors duration-300">
                 Follow
               </button>
             </div>
