@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import { Button, Chip, Typography } from "@mui/material";
 import { FaNodeJs, FaShopify, FaReact } from "react-icons/fa";
@@ -23,10 +24,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[70%,30%] gap-8 items-center">
           <div>
-            <Typography
-              variant="h1"
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold mb-4" // Adjusted font sizes here
-            >
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-6xl font-bold mb-4">
               I'm{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-cyan-600 font-bold">
                 Felix Tellmann
@@ -34,10 +32,9 @@ export default function HeroSection() {
               , a
               <br />
               Fullstack developer.
-            </Typography>
-
+            </h1>
             {/* Skills Logos with names */}
-            <div className="flex flex-wrap gap-4 mb-6">
+            <div className="flex flex-wrap mt-5  gap-4 mb-6">
               <div className="flex items-center space-x-2">
                 <SiNextdotjs size={24} />
                 <span>Next.js</span>
@@ -111,8 +108,8 @@ export default function HeroSection() {
           <div className="space-y-4">
             <div className="flex flex-wrap gap-2 mb-4">
               <Chip label="Hiker" className="bg-[#0E8AAA]  text-[#ffffff]" size="medium" />
-              <Chip label="Chef" className="bg-[#0E793C]  text-[#ffffff]"  size="medium" />
-              <Chip label="Runner"  className="bg-[#481878]  text-[#ffffff]" size="medium" />
+              <Chip label="Chef" className="bg-[#0E793C]  text-[#ffffff]" size="medium" />
+              <Chip label="Runner" className="bg-[#481878]  text-[#ffffff]" size="medium" />
               <Chip label="Mixologist" className="bg-[#004493]  text-[#ffffff]" size="medium" />
             </div>
 
